@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <script src="/index.js"></script>
+    <title>Carousel</title>
+</head>
+
+<body>
+    <div class="slide-gallery">
+        <div class="slide fade active" style="background-color: blueviolet;">
+            <div class="slide-content">
+                <h1>Slide 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+        </div>
+        <div class="slide fade" style="background-color: cyan;">
+            <div class="slide-content">
+                <h1>Slide 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+        </div>
+        <div class="slide fade" style="background-color: limegreen;">
+            <div class="slide-content">
+                <h1>Slide 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            </div>
+        </div>
+        <a class="change-slide prev" onclick="showPrevSlide()">&#10094;</a>
+        <a class="change-slide next" onclick="showNextSlide()">&#10095;</a>
+        <div class="slide-dots">
+            <span class="slide-dot active" onclick="showSlideByDot(0)"></span>
+            <span class="slide-dot" onclick="showSlideByDot(1)"></span>
+            <span class="slide-dot" onclick="showSlideByDot(2)"></span>
+        </div>
+    </div>
+</body>
+
+</html>
